@@ -8,6 +8,215 @@
   <link rel="icon" type="image/svg+xml" sizes="40x40" href="/img/icon-circle-bold.svg">
   <meta name="theme-color" content="#2b2d3d">
 <body>
+  <style>
+  
+.container {
+  width: 100%;
+  padding: 0 24px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: calc(100% - 48px);
+  display: flex;
+  flex-wrap: wrap;
+}
+.contained-half {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 706px;
+  }
+  .contained-half {
+    width: auto;
+    flex: 1;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 932px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+.contained-right-half {
+  text-align: right;
+}
+
+.animation {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+a {
+  color: #00b3f7;
+  text-decoration: none;
+}
+a:hover {
+  color: #006489;
+  text-decoration: none;
+}
+.button {
+  border: none;
+  height: 50px;
+  padding: 0 25px;
+  font: bold 12px/50px Roboto, san-serif;
+  background: linear-gradient(to right, #3fcaff, #88eeff, #a4ffb0, #88eeff);
+  background-size: 150% auto;
+  color: #2b2d3d;
+  display: inline-block;
+  border-radius: 25px;
+  margin: 6px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-position 500ms;
+  cursor: pointer;
+}
+.button:hover {
+  color: #2b2d3d;
+  background-position: right center;
+}
+.button.button-dark {
+  color: #ffffff;
+  background: #2b2d3d;
+  transition: color 500ms;
+}
+.button.button-dark:hover {
+  color: #88eeff;
+}
+.input {
+  width: calc(100% - 64px);
+  outline: none;
+  border: none;
+  height: 48px;
+  border-radius: 24px;
+  padding: 0 24px;
+  font: 14px/48px Roboto;
+  margin: 6px 8px;
+}
+textarea.input {
+  padding: 16px 24px;
+  height: 144px;
+  font: 14px/16px Roboto;
+  resize: none;
+}
+.status {
+  font: 14px Roboto;
+  margin-right: 20px;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font: 18px/1.5 Roboto, sans-serif;
+  color: #2b2d3d;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Rajdhani, sans-serif;
+  font-weight: 700;
+  margin: 16px 0;
+}
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4, h5, h6 {
+  font-size: 18px;
+}
+
+header, section, footer {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.navbar-icon {
+  height: 60px;
+  font: 700 24px/60px Rajdhani, sans-serif;
+  color: #88eeff;
+}
+.navbar-icon > .icon-image, .navbar-icon > .icon-text {
+  vertical-align: middle;
+}
+ul.navbar {
+  list-style-type: none;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  flex: 1 0 auto;
+}
+ul.navbar > li {
+  display: inline-block;
+  height: 60px;
+  vertical-align: middle;
+  font: 14px/60px Roboto, sans-serif;
+}
+ul.navbar a {
+  display: inline-block;
+  height: 60px;
+  color: #ffffff;
+  padding: 0 12px;
+}
+header {
+  position: absolute;
+  z-index: 10;
+  flex: 0 0 auto;
+}
+section {
+  flex: 1 0 auto;
+  padding: 36px 0;
+}
+section.banner-boxed {
+  padding: 36px 0 0;
+}
+section.banner-primary {
+  background: #2b2d3d;
+  color: #ffffff;
+}
+section.banner-secondary {
+  background: #88eeff;
+  background: linear-gradient(to right, #3fcaff, #88eeff, #a4ffb0);
+  color: #000000;
+}
+section.banner-home {
+  padding: 144px 0 36px;
+}
+
+.box {
+  padding: 36px 54px;
+  height: calc(100% - 72px);
+  color: #ffffff;
+  background: #2b2d3d;
+}
+
+footer {
+  background: #2b2d3d;
+  color: #92949f;
+  font-size: 13px;
+  flex-shrink: 0;
+  padding: 30px 0;
+}
+  </style>
   <section id="contact" class="banner-secondary">
     <div class="container">
       <div class="contained-half">
